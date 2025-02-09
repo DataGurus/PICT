@@ -29,23 +29,31 @@ This project is an AI-powered medical diagnostic tool that analyzes medical imag
 
  1️⃣ Clone the Repository
 
+'''python
 git clone https://github.com/DataGurus/Sanjeevani_AI.git
 cd Sanjeevani_AI
+'''
 
  2️⃣ Set Up Virtual Environment (Optional but Recommended)
 
+'''python
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+'''
 
  3️⃣ Install Backend Dependencies
 
+'''python
 pip install -r requirements.txt
+'''
 
  4️⃣ Install Frontend Dependencies
 Navigate to the frontend directory:
 
+'''zsh
 cd frontend
 npm install
+'''
 
  🛠 Installation Instructions
 
@@ -76,87 +84,85 @@ npm install
 
  📂 Directory Structure
 
-.
-├── Directory Structure Project Root 📦 /
-│   ├── 📄 index 
-│   ├── 📄 package.json # Frontend dependencies 
-│   ├── 📄 package-lock.json # Dependency lock file 
-│   ├── 📄 README.md # Project documentation 
-│   ├── 📄 tsconfig.json # TypeScript configuration 
-│   ├── 📄 .gitignore # Git ignore file 
-│   ├── 📄 styles # CSS styles
-│   ├── 📁 public # Static files for React/
-│   │   ├── impact-3.jpeg 
-│   │   ├── impact-3.jpg 
-│   │   ├── index.jpg 
-│   │   ├── kidney.jpg 
-│   │   ├── liver.jpg 
-│   │   ├── Brain.jpg 
-│   │   ├── Eye.jpg 
-│   │   ├── logo.png 
-│   │   ├── logo-name.png 
-│   │   ├── logo192.png 
-│   │   ├── logo512.png 
-│   │   └── favicon.ico 
-│   ├── 📁 assets # Image and media assets 
-│   └── 📁 src # React app source code /
-│       ├── 📄 MainPage.css # CSS for the main page 
-│       ├── 📄 MainPage.tsx # Main page component 
-│       ├── 📄 setupTests.ts # Testing setup 
-│       ├── 📄 SignInSide.tsx # Sign-in page component 
-│       ├── 📄 App.tsx # Main application file 
-│       ├── 📄 index.css # Global styles 
-│       ├── 📄 index.tsx # Application entry point 
-│       ├── 📄 logo.html # Logo file 
-│       ├── 📁 components # React components folder /
-│       │   ├── CustomIcons.tsx 📄 
-│       │   ├── CustomIcons.css 🎨 
-│       │   ├── Dashboard.tsx 📄 
-│       │   ├── Dashboard.css 🎨
-│       │   ├── ForgotPassword.tsx 📄
-│       │   ├── Navbar.tsx 📄
-│       │   ├── Navbar.css 🎨
-│       │   ├── Profile.tsx 📄
-│       │   ├── rofile.css 🎨
-│       │   ├── Forum.tsx 📄
-│       │   ├── Forum.css 🎨
-│       │   ├── GenerateReport.tsx 📄
-│       │   ├── GenerateReport.css 🎨
-│       │   ├── Records.tsx 📄
-│       │   ├── Records.css 🎨
-│       │   ├── Report.tsx 📄 
-│       │   ├── Report.css 🎨
-│       │   ├── SignInCard.tsx 📄
-│       │   ├── SignInCard.css 🎨
-│       │   └── ToastifyStyles.tsx 📄
-│       ├── 📁theme/
-│       │   ├── AppTheme.tsx 📄
-│       │   ├── ColorModeIconDropdown.tsx 📄
-│       │   ├── ColorModeSelect.tsx 📄
-│       │   └── themePrimitives.ts 📜
-│       └── 📁customizations/
-│           ├── feedback.tsx 📄
-│           ├── inputs.tsx 📄
-│           ├── navigation.tsx 📄
-│           ├── surfaces.ts 📜
-│           └── dataDisplay.tsx 📄
-└── 📁 Python files /
-    ├── 📁 Computer Vision  /
-    │   ├── 📁 Model-weights/
-    │   │   ├── yolo.pt
-    │   │   └── cnn_weights.h5
-    │   ├── 📁 Datasets/
-    │   │   └── dataset.csv
-    │   ├── 📄 liver.py
-    │   ├── 📄 brain.py
-    │   ├── 📄 eyes.py
-    │   ├── 📄 lungs.py 
-    │   └── 📄 kidney.py
-    └── 📁 Natural Language Processing/
-        ├── 📄 rag_mdb.py
-        └── 📦 dataset.zip
-
-
+ Directory Structure Project Root 📦 
+|-- 📄 index 
+|-- 📄 package.json # Frontend dependencies 
+|-- 📄 package-lock.json # Dependency lock file 
+|-- 📄 README.md # Project documentation 
+|-- 📄 tsconfig.json # TypeScript configuration 
+|-- 📄 .gitignore # Git ignore file 
+|-- 📄 styles # CSS styles
+|-- 📁 public # Static files for React
+|   |-- impact-3.jpeg 
+|   |-- impact-3.jpg 
+|   |-- index.jpg 
+|   |-- kidney.jpg 
+|   |-- liver.jpg 
+|   |-- Brain.jpg 
+|   |-- Eye.jpg 
+|   |-- logo.png 
+|   |-- logo-name.png 
+|   |-- logo192.png 
+|   |-- logo512.png 
+|   `-- favicon.ico 
+|-- 📁 assets # Image and media assets 
+`-- 📁 src # React app source code 
+    |-- 📄 MainPage.css # CSS for the main page 
+    |-- 📄 MainPage.tsx # Main page component 
+    |-- 📄 setupTests.ts # Testing setup 
+    |-- 📄 SignInSide.tsx # Sign-in page component 
+    |-- 📄 App.tsx # Main application file 
+    |-- 📄 index.css # Global styles 
+    |-- 📄 index.tsx # Application entry point 
+    |-- 📄 logo.html # Logo file 
+    |-- 📁 components # React components folder 
+    |   |-- CustomIcons.tsx 📄 
+    |   |-- CustomIcons.css 🎨 
+    |   |-- Dashboard.tsx 📄 
+    |   |-- Dashboard.css 🎨
+    |   |-- ForgotPassword.tsx 📄
+    |   |-- Navbar.tsx 📄
+    |   |-- Navbar.css 🎨
+    |   |-- Profile.tsx 📄
+    |   |-- rofile.css 🎨
+    |   |-- Forum.tsx 📄
+    |   |-- Forum.css 🎨
+    |   |-- GenerateReport.tsx 📄
+    |   |-- GenerateReport.css 🎨
+    |   |-- Records.tsx 📄
+    |   |-- Records.css 🎨
+    |   |-- Report.tsx 📄 
+    |   |-- Report.css 🎨
+    |   |-- SignInCard.tsx 📄
+    |   |-- SignInCard.css 🎨
+    |   `-- ToastifyStyles.tsx 📄
+    |-- 📁theme
+    |   |-- AppTheme.tsx 📄
+    |   |-- ColorModeIconDropdown.tsx 📄
+    |   |-- ColorModeSelect.tsx 📄
+    |   `-- themePrimitives.ts 📜
+    `-- 📁customizations
+        |-- feedback.tsx 📄
+        |-- inputs.tsx 📄
+        |-- navigation.tsx 📄
+        |-- surfaces.ts 📜
+        `-- dataDisplay.tsx 📄
+📁 Python files 
+|-- 📁 Computer Vision  
+|   |-- 📁 Model-weights
+|   |   |-- yolo.pt
+|   |   `-- cnn_weights.h5
+|   |-- 📁 Datasets
+|   |   `-- dataset.csv
+|   |-- 📄 liver.py
+|   |-- 📄 brain.py
+|   |-- 📄 eyes.py
+|   |-- 📄 lungs.py 
+|   `-- 📄 kidney.py
+`-- 📁 Natural Language Processing
+    |-- 📄 rag_mdb.py
+    `-- 📦 dataset.zip
+    
  🔥 Future Enhancements
  
 - 🏥 Integrate additional AI models for more disease classification.
