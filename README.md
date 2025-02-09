@@ -14,7 +14,7 @@ This project is an AI-powered medical diagnostic tool that analyzes medical imag
 - React-based frontend for user-friendly interactions.
 - PDF report generation with test recommendations.
 
- <h2>⚙️ Execution flow and Configuration Information</h2>
+ <h2>⚙️ Execution flow</h2>
 
  <h3>Execution Flow</h3>
 1. Running Python files : Training and storing weights of the model.
