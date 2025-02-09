@@ -17,13 +17,13 @@ This project is an AI-powered medical diagnostic tool that analyzes medical imag
  ⚙️ Execution flow and Configuration Information
 
  Execution Flow
+1. Running Python files : Training and storing weights of the model.
+2. Running code for generation  of Hybrid Database for NLP (Retrieval Augmented Generation) engine.
+3. Loading the Med-Embed model from HuggingFace : Coverting database into embeddings efficient for retrieval.
+4. Upload vector embeddings in Pinecone Vector Database.
+5. Run app.py
+6. Run npm : Frontend Code files
 
- 1️. Running Python files : Training and storing weights of the model.
- 2. Running code for generation  of Hybrid Database for NLP (Retrieval Augmented Generation) engine.
- 3. Loading the Med-Embed model from HuggingFace : Coverting database into embeddings efficient for retrieval.
- 4. Upload vector embeddings in Pinecone Vector Database.
- 5. Run app.py
- 6. Run npm : Frontend Code files
 
  Configuration Information
 
@@ -86,6 +86,7 @@ npm install
 
  📂 Directory Structure
 
+```
  Directory Structure Project Root 📦 
 |-- 📄 index 
 |-- 📄 package.json # Frontend dependencies 
@@ -164,7 +165,8 @@ npm install
 `-- 📁 Natural Language Processing
     |-- 📄 rag_mdb.py
     `-- 📦 dataset.zip
-    
+```
+
  🔥 Future Enhancements
  
 - 🏥 Integrate additional AI models for more disease classification.
