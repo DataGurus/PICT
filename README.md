@@ -29,31 +29,31 @@ This project is an AI-powered medical diagnostic tool that analyzes medical imag
 
  1️⃣ Clone the Repository
 
-'''python
+```python
 git clone https://github.com/DataGurus/Sanjeevani_AI.git
 cd Sanjeevani_AI
-'''
+```
 
  2️⃣ Set Up Virtual Environment (Optional but Recommended)
 
-'''python
+```python
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-'''
+```
 
  3️⃣ Install Backend Dependencies
 
-'''python
+```bash
 pip install -r requirements.txt
-'''
+```
 
  4️⃣ Install Frontend Dependencies
 Navigate to the frontend directory:
 
-'''zsh
+```bash
 cd frontend
 npm install
-'''
+```
 
  🛠 Installation Instructions
 
@@ -62,15 +62,17 @@ npm install
 1. Ensure `Python 3.8+` is installed.
 2. Run the Flask server:
 
+```python
    python app.py
+```
 
  🔹 Frontend Setup (React)
 
 1. Ensure `Node.js 16+` is installed.
 2. Start the React development server:
-
+```bash
    npm start
-
+```
  🚀 Operating Instructions
 
 1. Upload a Medical Image
