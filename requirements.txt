@@ -1,0 +1,30 @@
+# Machine Learning & Computer Vision
+ultralytics==8.0.0  # YOLOv8n for object detection
+tensorflow==2.17.0
+keras==3.7.0
+opencv-python==4.9.0.80
+pydicom==2.4.4
+
+# NLP & Vector Database
+pinecone-client
+sentence-transformers
+scipy
+langchain
+langchain-community
+langchain-pinecone
+
+# Backend & APIs
+flask
+flask-cors
+flask-mail
+smtplib
+json
+
+# Frontend Dependencies (React)
+react
+react-toastify
+react-router-dom
+react-icons
+react-datepicker
+jspdf
+html2canvas
