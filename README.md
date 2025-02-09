@@ -77,7 +77,7 @@ npm install
  📂 Directory Structure
 
 📦 Project Root
-├── 📄 index                  # Webpage entry point
+├── 📄 index
 ├── 📄 package.json           # Frontend dependencies
 ├── 📄 package-lock.json      # Dependency lock file
 ├── 📄 README.md              # Project documentation
