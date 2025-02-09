@@ -75,7 +75,7 @@ npm install
    - PDF download option.
 
  📂 Directory Structure
-
+'''
 .
 ├── Directory Structure Project Root 📦 /
 │   ├── 📄 index 
@@ -155,7 +155,7 @@ npm install
     └── 📁 Natural Language Processing/
         ├── 📄 rag_mdb.py
         └── 📦 dataset.zip
-
+'''
  🔥 Future Enhancements
 
 - 🏥 Integrate additional AI models for more disease classification.
