@@ -29,8 +29,12 @@ This project is an AI-powered medical diagnostic tool that analyzes medical imag
 
  1️⃣ Clone the Repository
 
+'''python
+
 git clone https://github.com/DataGurus/Sanjeevani_AI.git
 cd Sanjeevani_AI
+
+'''
 
  2️⃣ Set Up Virtual Environment (Optional but Recommended)
 
@@ -75,43 +79,43 @@ npm install
    - PDF download option.
 
  📂 Directory Structure
-'''
+
 .
 ├── Directory Structure Project Root 📦 /
-│   ├── 📄 index 
-│   ├── 📄 package.json # Frontend dependencies 
-│   ├── 📄 package-lock.json # Dependency lock file 
-│   ├── 📄 README.md # Project documentation 
-│   ├── 📄 tsconfig.json # TypeScript configuration 
-│   ├── 📄 .gitignore # Git ignore file 
+│   ├── 📄 index
+│   ├── 📄 package.json # Frontend dependencies
+│   ├── 📄 package-lock.json # Dependency lock file
+│   ├── 📄 README.md # Project documentation
+│   ├── 📄 tsconfig.json # TypeScript configuration
+│   ├── 📄 .gitignore # Git ignore file
 │   ├── 📄 styles # CSS styles
 │   ├── 📁 public # Static files for React/
-│   │   ├── impact-3.jpeg 
-│   │   ├── impact-3.jpg 
-│   │   ├── index.jpg 
-│   │   ├── kidney.jpg 
-│   │   ├── liver.jpg 
-│   │   ├── Brain.jpg 
-│   │   ├── Eye.jpg 
-│   │   ├── logo.png 
-│   │   ├── logo-name.png 
-│   │   ├── logo192.png 
-│   │   ├── logo512.png 
-│   │   └── favicon.ico 
-│   ├── 📁 assets # Image and media assets 
+│   │   ├── impact-3.jpeg
+│   │   ├── impact-3.jpg
+│   │   ├── index.jpg
+│   │   ├── kidney.jpg
+│   │   ├── liver.jpg
+│   │   ├── Brain.jpg
+│   │   ├── Eye.jpg
+│   │   ├── logo.png
+│   │   ├── logo-name.png
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   └── favicon.ico
+│   ├── 📁 assets # Image and media assets
 │   └── 📁 src # React app source code /
-│       ├── 📄 MainPage.css # CSS for the main page 
-│       ├── 📄 MainPage.tsx # Main page component 
-│       ├── 📄 setupTests.ts # Testing setup 
-│       ├── 📄 SignInSide.tsx # Sign-in page component 
-│       ├── 📄 App.tsx # Main application file 
-│       ├── 📄 index.css # Global styles 
-│       ├── 📄 index.tsx # Application entry point 
-│       ├── 📄 logo.html # Logo file 
+│       ├── 📄 MainPage.css # CSS for the main page
+│       ├── 📄 MainPage.tsx # Main page component
+│       ├── 📄 setupTests.ts # Testing setup
+│       ├── 📄 SignInSide.tsx # Sign-in page component
+│       ├── 📄 App.tsx # Main application file
+│       ├── 📄 index.css # Global styles
+│       ├── 📄 index.tsx # Application entry point
+│       ├── 📄 logo.html # Logo file
 │       ├── 📁 components # React components folder /
-│       │   ├── CustomIcons.tsx 📄 
-│       │   ├── CustomIcons.css 🎨 
-│       │   ├── Dashboard.tsx 📄 
+│       │   ├── CustomIcons.tsx 📄
+│       │   ├── CustomIcons.css 🎨
+│       │   ├── Dashboard.tsx 📄
 │       │   ├── Dashboard.css 🎨
 │       │   ├── ForgotPassword.tsx 📄
 │       │   ├── Navbar.tsx 📄
@@ -124,7 +128,7 @@ npm install
 │       │   ├── GenerateReport.css 🎨
 │       │   ├── Records.tsx 📄
 │       │   ├── Records.css 🎨
-│       │   ├── Report.tsx 📄 
+│       │   ├── Report.tsx 📄
 │       │   ├── Report.css 🎨
 │       │   ├── SignInCard.tsx 📄
 │       │   ├── SignInCard.css 🎨
@@ -150,12 +154,12 @@ npm install
     │   ├── 📄 liver.py
     │   ├── 📄 brain.py
     │   ├── 📄 eyes.py
-    │   ├── 📄 lungs.py 
+    │   ├── 📄 lungs.py
     │   └── 📄 kidney.py
     └── 📁 Natural Language Processing/
         ├── 📄 rag_mdb.py
         └── 📦 dataset.zip
-'''
+
  🔥 Future Enhancements
 
 - 🏥 Integrate additional AI models for more disease classification.
