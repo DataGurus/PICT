@@ -1,9 +1,9 @@
 # Medical Image Analysis & NLP Report Generation
 
-📌 Overview
+<h2>📌 Overview</h1>
 This project is an AI-powered medical diagnostic tool that analyzes medical images (X-rays, MRIs, CT scans) to detect diseases using deep learning models. It also generates diagnostic reports using NLP techniques. The system supports both JPG and DICOM file formats.
 
-🚀 Features
+<h2>🚀 Features</h2>
 
 - YOLOv8n for object detection in medical images.
 - CNN-based classification for disease identification.
@@ -14,9 +14,9 @@ This project is an AI-powered medical diagnostic tool that analyzes medical imag
 - React-based frontend for user-friendly interactions.
 - PDF report generation with test recommendations.
 
- ⚙️ Execution flow and Configuration Information
+ <h2>⚙️ Execution flow and Configuration Information</h2>
 
- Execution Flow
+ <h3>Execution Flow</h3>
 1. Running Python files : Training and storing weights of the model.
 2. Running code for generation  of Hybrid Database for NLP (Retrieval Augmented Generation) engine.
 3. Loading the Med-Embed model from HuggingFace : Coverting database into embeddings efficient for retrieval.
@@ -25,29 +25,29 @@ This project is an AI-powered medical diagnostic tool that analyzes medical imag
 6. Run npm : Frontend Code files
 
 
- Configuration Information
+ <h2>Configuration Information</h2>
 
- 1️⃣ Clone the Repository
+ <h3>1️⃣ Clone the Repository</h3>
 
 ```python
 git clone https://github.com/DataGurus/Sanjeevani_AI.git
 cd Sanjeevani_AI
 ```
 
- 2️⃣ Set Up Virtual Environment (Optional but Recommended)
+ <h3>2️⃣ Set Up Virtual Environment (Optional but Recommended)</h3>
 
 ```python
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
- 3️⃣ Install Backend Dependencies
+ <h3>3️⃣ Install Backend Dependencies</h3>
 
 ```bash
 pip install -r requirements.txt
 ```
 
- 4️⃣ Install Frontend Dependencies
+ <h3>4️⃣ Install Frontend Dependencies</h3>
 Navigate to the frontend directory:
 
 ```bash
@@ -55,9 +55,9 @@ cd frontend
 npm install
 ```
 
- 🛠 Installation Instructions
+<h2> 🛠 Installation Instructions</h2>
 
- 🔹 Backend Setup (Flask)
+ <h3>🔹 Backend Setup (Flask)</h3>
 
 1. Ensure `Python 3.8+` is installed.
 2. Run the Flask server:
@@ -66,14 +66,14 @@ npm install
    python app.py
 ```
 
- 🔹 Frontend Setup (React)
+ <h3>🔹 Frontend Setup (React)</h3>
 
 1. Ensure `Node.js 16+` is installed.
 2. Start the React development server:
 ```bash
    npm start
 ```
- 🚀 Operating Instructions
+ <h3>🚀 Operating Instructions</h3>
 
 1. Upload a Medical Image
    - Choose between `.jpg` or `.dcm` format.
@@ -84,7 +84,7 @@ npm install
    - Extracted medical insights using NLP.
    - PDF download option.
 
- 📂 Directory Structure
+ <h2>📂 Directory Structure</h2>
 
 ```
  Directory Structure Project Root 📦 
@@ -167,13 +167,13 @@ npm install
     `-- 📦 dataset.zip
 ```
 
- 🔥 Future Enhancements
+ <h2>🔥 Future Enhancements</h2>
  
 - 🏥 Integrate additional AI models for more disease classification.
 - 📊 Add data visualization for medical trends.
 - 🌍 Multi-language support for medical reports.
 
- 🤝 Contributors
+ <h2>🤝 Contributors</h2>
 
 - Prasanna Patwardhan
 - Yash Kulkarni
@@ -181,6 +181,6 @@ npm install
 - Rahul Dewani
 - Yugandhar Chawale
 
- 📧 Contact
+<h2> 📧 Contact</h2>
 For queries, reach out at:
 📩 team.datagurus@gmail.com
