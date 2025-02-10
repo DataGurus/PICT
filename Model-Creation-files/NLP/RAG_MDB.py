@@ -192,9 +192,9 @@ index = pc.Index("your-index")
 index_name = "your-index"
 vectorstore = PineconeVectorStore(index_name=index_name, embedding=embedding_model)
 
-pip install langchain-pinecone
+!pip install langchain-pinecone
 
-pip install -U langchain-community
+!pip install -U langchain-community
 
 import pandas as pd
 import numpy as np
@@ -202,7 +202,7 @@ import numpy as np
 # Load your dataset
 df = pd.read_csv("/content/augmented_kidney_data.csv")
 
-# Replace NaN with an empty string in the relevant columns
+# Replace NaN with an empty string in the relevant columns      
 df.fillna("", inplace=True)
 
 # Prepare data for embedding
