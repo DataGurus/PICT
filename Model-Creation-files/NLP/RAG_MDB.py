@@ -141,8 +141,8 @@ print("Disease Hybrid (Sample):", df["disease_hybrid"].head())
 # Save augmented dataset
 df.to_csv("augmented_kidney_data.csv", index=False)
 
-pip install pinecone
-pip install sentence-transformers
+!pip install pinecone
+!pip install sentence-transformers
 
 #pcsk_76sA86_9DeHgRYds1BXvcndMbEyvKKtUrqPTeuUfbnVsdTm3PHQGi1yjix16aEvWRpHuQj - pinecone MDB
 
