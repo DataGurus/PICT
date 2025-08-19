@@ -1,186 +1,126 @@
-# Medical Image Analysis & NLP Report Generation
+# 🏥 Medical Image Analysis & Report Generation (AI-Powered)
 
-<h2>📌 Overview</h1>
-This project is an AI-powered medical diagnostic tool that analyzes medical images (X-rays, MRIs, CT scans) to detect diseases using deep learning models. It also generates diagnostic reports using NLP techniques. The system supports both JPG and DICOM file formats.
+## 📌 Overview
+This project is an AI-powered medical diagnostic system that integrates **Computer Vision (CV)** and **Natural Language Processing (NLP)** to analyze medical images (X-rays, MRIs, CT scans) and generate **diagnostic reports**.  
 
-<h2>🚀 Features</h2>
+The workflow includes:
+- Training CV models and exporting `.pt` weights.  
+- Building a Retrieval-Augmented Generation (RAG) pipeline using **Pinecone** for medical knowledge retrieval.  
+- A **Flask backend** for serving predictions and report generation.  
+- A **React frontend** for doctors/patients to interact with the system.  
 
-- YOLOv8n for object detection in medical images.
-- CNN-based classification for disease identification.
-- DICOM file support for medical imaging.
-- OpenCV preprocessing & postprocessing.
-- NLP-powered report generation.
-- Flask API for backend processing.
-- React-based frontend for user-friendly interactions.
-- PDF report generation with test recommendations.
+---
 
- <h2>⚙️ Execution flow</h2>
+## 🚀 Features
+- **YOLOv8 & CNN-based models** for disease detection.  
+- **NLP-powered diagnostic report generation** with RAG.  
+- **Pinecone vector database** integration for retrieval.  
+- **JPG + DICOM medical imaging support.**  
+- **Full-stack application**: Flask backend + React frontend.  
+- **PDF report generation with recommended tests.**
 
- <h3>Execution Flow</h3>
-1. Running Python files : Training and storing weights of the model.
-2. Running code for generation  of Hybrid Database for NLP (Retrieval Augmented Generation) engine.
-3. Loading the Med-Embed model from HuggingFace : Coverting database into embeddings efficient for retrieval.
-4. Upload vector embeddings in Pinecone Vector Database.
-5. Run app.py
-6. Run npm : Frontend Code files
+---
 
+## 📂 Project Structure
+```
+📦 Project Root
+│── 📁 CV/                     # Model creation (training notebooks)
+│   ├── model1.ipynb
+│   ├── model2.ipynb
+│   └── ...
+│   └── (Outputs: *.pt files → move to /website/server/)
+│
+│── 📁 NLP/                    # NLP & RAG setup
+│   ├── RAG_MDP.ipynb          # Run this after Pinecone setup
+│   └── datasets.zip           # Medical text datasets
+│
+│── 📁 website/
+│   ├── 📁 client/              # React frontend
+│   │   ├── package.json
+│   │   └── src/
+│   │
+│   └── 📁 server/              # Flask backend
+│       ├── app.py
+│       ├── requirements.txt
+│       └── *.pt (Model weights go here)
+│
+│── README.md
+└── .gitignore
+```
 
- <h2>Configuration Information</h2>
+---
 
- <h3>1️⃣ Clone the Repository</h3>
+## ⚙️ Setup Instructions
 
-```python
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/DataGurus/Sanjeevani_AI.git
 cd Sanjeevani_AI
 ```
 
- <h3>2️⃣ Set Up Virtual Environment (Optional but Recommended)</h3>
+---
 
-```python
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+### 2️⃣ Computer Vision Models (Training)
+1. Navigate to `CV/` folder.  
+2. Run each `.ipynb` file (Jupyter/Colab).  
+3. Collect the generated `.pt` files.  
+4. Move them into `/website/server/`.
 
- <h3>3️⃣ Install Backend Dependencies</h3>
+---
 
+### 3️⃣ NLP & Pinecone Setup
+1. Navigate to `NLP/`.  
+2. Extract `datasets.zip`.  
+3. Setup your **Pinecone API key** and environment variables.  
+4. Run `RAG_MDP.ipynb` to build embeddings and upload them to Pinecone.  
+
+✅ Now your **medical RAG database** is ready.
+
+---
+
+### 4️⃣ Backend Setup (Flask)
 ```bash
+cd website/server
 pip install -r requirements.txt
+python app.py
 ```
 
- <h3>4️⃣ Install Frontend Dependencies</h3>
-Navigate to the frontend directory:
+---
 
+### 5️⃣ Frontend Setup (React)
 ```bash
-cd frontend
+cd website/client
 npm install
+npm start
 ```
 
-<h2> 🛠 Installation Instructions</h2>
+---
 
- <h3>🔹 Backend Setup (Flask)</h3>
+## 🖥️ Usage Flow
+1. **Upload medical image** (`.jpg` / `.dcm`).  
+2. **AI CV models** analyze and classify diseases.  
+3. **NLP RAG system** generates diagnostic reports + test recommendations.  
+4. Download final **PDF report**.  
 
-1. Ensure `Python 3.8+` is installed.
-2. Run the Flask server:
+---
 
-```python
-   python app.py
-```
+## 🔮 Future Enhancements
+- Add support for more diseases (multi-label classification).  
+- Multi-language reports.  
+- Integration with **FHIR/HL7 medical standards**.  
+- Cloud deployment (AWS/GCP/Azure).  
 
- <h3>🔹 Frontend Setup (React)</h3>
+---
 
-1. Ensure `Node.js 16+` is installed.
-2. Start the React development server:
-```bash
-   npm start
-```
- <h3>🚀 Operating Instructions</h3>
+## 👨‍💻 Contributors
+- Prasanna Patwardhan  
+- Yash Kulkarni  
+- Piyush Deshmukh  
+- Rahul Dewani  
+- Yugandhar Chawale  
 
-1. Upload a Medical Image
-   - Choose between `.jpg` or `.dcm` format.
-2. AI Model Processing
-   - Object detection via YOLOv8.
-   - Disease classification using CNN.
-3. Report Generation
-   - Extracted medical insights using NLP.
-   - PDF download option.
+---
 
- <h2>📂 Directory Structure</h2>
-
-```
- Directory Structure Project Root 📦 
-|-- 📄 index 
-|-- 📄 package.json # Frontend dependencies 
-|-- 📄 package-lock.json # Dependency lock file 
-|-- 📄 README.md # Project documentation 
-|-- 📄 tsconfig.json # TypeScript configuration 
-|-- 📄 .gitignore # Git ignore file 
-|-- 📄 styles # CSS styles
-|-- 📁 public # Static files for React
-|   |-- impact-3.jpeg 
-|   |-- impact-3.jpg 
-|   |-- index.jpg 
-|   |-- kidney.jpg 
-|   |-- liver.jpg 
-|   |-- Brain.jpg 
-|   |-- Eye.jpg 
-|   |-- logo.png 
-|   |-- logo-name.png 
-|   |-- logo192.png 
-|   |-- logo512.png 
-|   `-- favicon.ico 
-|-- 📁 assets # Image and media assets 
-`-- 📁 src # React app source code 
-    |-- 📄 MainPage.css # CSS for the main page 
-    |-- 📄 MainPage.tsx # Main page component 
-    |-- 📄 setupTests.ts # Testing setup 
-    |-- 📄 SignInSide.tsx # Sign-in page component 
-    |-- 📄 App.tsx # Main application file 
-    |-- 📄 index.css # Global styles 
-    |-- 📄 index.tsx # Application entry point 
-    |-- 📄 logo.html # Logo file 
-    |-- 📁 components # React components folder 
-    |   |-- CustomIcons.tsx 📄 
-    |   |-- CustomIcons.css 🎨 
-    |   |-- Dashboard.tsx 📄 
-    |   |-- Dashboard.css 🎨
-    |   |-- ForgotPassword.tsx 📄
-    |   |-- Navbar.tsx 📄
-    |   |-- Navbar.css 🎨
-    |   |-- Profile.tsx 📄
-    |   |-- rofile.css 🎨
-    |   |-- Forum.tsx 📄
-    |   |-- Forum.css 🎨
-    |   |-- GenerateReport.tsx 📄
-    |   |-- GenerateReport.css 🎨
-    |   |-- Records.tsx 📄
-    |   |-- Records.css 🎨
-    |   |-- Report.tsx 📄 
-    |   |-- Report.css 🎨
-    |   |-- SignInCard.tsx 📄
-    |   |-- SignInCard.css 🎨
-    |   `-- ToastifyStyles.tsx 📄
-    |-- 📁theme
-    |   |-- AppTheme.tsx 📄
-    |   |-- ColorModeIconDropdown.tsx 📄
-    |   |-- ColorModeSelect.tsx 📄
-    |   `-- themePrimitives.ts 📜
-    `-- 📁customizations
-        |-- feedback.tsx 📄
-        |-- inputs.tsx 📄
-        |-- navigation.tsx 📄
-        |-- surfaces.ts 📜
-        `-- dataDisplay.tsx 📄
-📁 Python files 
-|-- 📁 Computer Vision  
-|   |-- 📁 Model-weights
-|   |   |-- yolo.pt
-|   |   `-- cnn_weights.h5
-|   |-- 📁 Datasets
-|   |   `-- dataset.csv
-|   |-- 📄 liver.py
-|   |-- 📄 brain.py
-|   |-- 📄 eyes.py
-|   |-- 📄 lungs.py 
-|   `-- 📄 kidney.py
-`-- 📁 Natural Language Processing
-    |-- 📄 rag_mdb.py
-    `-- 📦 dataset.zip
-```
-
- <h2>🔥 Future Enhancements</h2>
- 
-- 🏥 Integrate additional AI models for more disease classification.
-- 📊 Add data visualization for medical trends.
-- 🌍 Multi-language support for medical reports.
-
- <h2>🤝 Contributors</h2>
-
-- Prasanna Patwardhan
-- Yash Kulkarni
-- Piyush Deshmukh
-- Rahul Dewani
-- Yugandhar Chawale
-
-<h2> 📧 Contact</h2>
-For queries, reach out at:
-📩 team.datagurus@gmail.com
+## 📬 Contact
+For queries, reach out at:  
+📩 **team.datagurus@gmail.com**
