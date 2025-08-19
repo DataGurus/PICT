@@ -31,7 +31,7 @@ The workflow includes:
 │   └── (Outputs: *.pt files → move to /website/server/)
 │
 │── 📁 NLP/                    # NLP & RAG setup
-│   ├── RAG_MDP.ipynb          # Run this after Pinecone setup
+│   ├── RAG_Pinecodeloading_Sanjeevani.ipynb          # Run this after Pinecone setup
 │   └── datasets.zip           # Medical text datasets
 │
 │── 📁 website/
@@ -72,7 +72,7 @@ cd Sanjeevani_AI
 1. Navigate to `NLP/`.  
 2. Extract `datasets.zip`.  
 3. Setup your **Pinecone API key** and environment variables.  
-4. Run `RAG_MDP.ipynb` to build embeddings and upload them to Pinecone.  
+4. Run `RAG_Pinecodeloading_Sanjeevani.ipynb` to build embeddings and upload them to Pinecone.  
 
 ✅ Now your **medical RAG database** is ready.
 
