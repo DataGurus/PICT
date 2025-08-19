@@ -19,12 +19,3 @@ flask-cors
 flask-mail
 smtplib
 json
-
-# Frontend Dependencies (React)
-react
-react-toastify
-react-router-dom
-react-icons
-react-datepicker
-jspdf
-html2canvas
