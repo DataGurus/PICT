@@ -113,11 +113,11 @@ npm start
 ---
 
 ## 👨‍💻 Contributors
-- Prasanna Patwardhan  
-- Yash Kulkarni  
-- Piyush Deshmukh  
-- Rahul Dewani  
-- Yugandhar Chawale  
+- [Prasanna Patwardhan](https://github.com/prasannapp100)  
+- [Yash Kulkarni](https://github.com/YashKulkarni7996)  
+- [Piyush Deshmukh](https://github.com/piyush)  
+- [Rahul Dewani](https://github.com/Rahul-Dewani)  
+- [Yugandhar Chawale](https://github.com/yugandhar)  
 
 ---
 
