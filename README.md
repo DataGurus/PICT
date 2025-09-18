@@ -32,11 +32,12 @@ The workflow includes:
 │
 │── 📁 NLP/                    # NLP & RAG setup
 │   ├── RAG_Pinecodeloading_Sanjeevani.ipynb          # Run this after Pinecone setup
-│
+│   └── dataset.zip            # clinical notes dataset
+|
 │── 📁 website/
 │   ├── 📁 client/              # React frontend
 │   │   ├── package.json
-│   │   └── src/
+│   │   └── src/ 
 │   │
 │   └── 📁 server/              # Flask backend
 │       ├── app.py
